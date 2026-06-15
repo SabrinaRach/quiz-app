@@ -11,7 +11,7 @@
 }
 
 .question-text {
-    font-size: 1rem
+    font-size: 2rem
 }
 
 .show-answer {
@@ -22,9 +22,20 @@
 }
 
 .tag {
+    display: inline-flex;
+    width: fit-content;
     font-size: 0.8rem;
     text-decoration: none;
     background-color: coral;
+    border-radius: 6px;
     color: black;
-    align-self: flex-start;
+    padding: 4px 8px;
 }
+
+.tags {
+    display: flex;
+    gap: 8px;
+}
+
+
+@media screen and ()
