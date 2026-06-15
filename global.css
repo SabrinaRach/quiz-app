@@ -11,6 +11,10 @@ header {
   padding: 1px;
 }
 
+main {
+  text-align: center;
+}
+
 header p {
   font-size: 24px;
   font-weight: bold;
