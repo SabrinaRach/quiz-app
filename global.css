@@ -17,6 +17,7 @@ main {
 }
 
 header p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
