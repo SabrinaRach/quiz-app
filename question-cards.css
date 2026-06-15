@@ -1,5 +1,5 @@
 .question-card {
-  postion: relative; /* damit sich das bookmark an der question-card orientiert */
+  position: relative; /* damit sich das bookmark an der question-card orientiert */
   background-color: rgb(144, 200, 249);
   border: 20px solid rgb(234, 235, 236);
   max-width: 400px;
