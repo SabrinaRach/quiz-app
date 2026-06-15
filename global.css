@@ -46,6 +46,12 @@ nav {
   color: blanchedalmond;
 }
 
+footer nav a.active .lucide,
+footer nav a[aria-current="page"] .lucide {
+  stroke: #7a177d;
+  fill: none;
+}
+
 .lucide:hover {
   color: orangered;
 }
