@@ -1,5 +1,5 @@
 .question-card {
-  background-color:rgb(144, 200, 249);
+  background-color: rgb(144, 200, 249);
   border: 20px solid rgb(234, 235, 236);
   max-width: 400px;
   border-radius: 8px;
@@ -11,20 +11,27 @@
 }
 
 .question-text {
-    font-size: 1rem
+  font-size: 1rem;
 }
 
 .show-answer {
-    padding: 8px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .tag {
-    font-size: 0.8rem;
-    text-decoration: none;
-    background-color: coral;
-    color: black;
-    align-self: flex-start;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: coral;
+  color: black;
+  align-self: flex-start;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
