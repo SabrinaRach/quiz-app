@@ -1,0 +1,30 @@
+.question-card {
+  background-color:rgb(144, 200, 249);
+  border: 20px solid rgb(234, 235, 236);
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question-text {
+    font-size: 1rem
+}
+
+.show-answer {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tag {
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: coral;
+    color: black;
+    align-self: flex-start;
+}
