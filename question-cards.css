@@ -1,4 +1,5 @@
 .question-card {
+  postion: relative; /* damit sich das bookmark an der question-card orientiert */
   background-color: rgb(144, 200, 249);
   border: 20px solid rgb(234, 235, 236);
   max-width: 400px;
@@ -8,6 +9,24 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  border: 1px solid #ccc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(17, 114, 114);
 }
 
 .question-text {
