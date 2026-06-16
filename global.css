@@ -55,9 +55,9 @@ footer nav a[aria-current="page"] .lucide {
 }
 
 
-/*.lucide:hover { /*für die Navi und die Bookmarks*/
+.lucide:hover { /*für die Navi und die Bookmarks*/
   color: rgb(79, 239, 141);
-} */
+} 
 
 a:hover { /*für die Tags*/
   color: orangered;
