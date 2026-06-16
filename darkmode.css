@@ -26,4 +26,9 @@
   .tag {
     background-color: rgb(252, 245, 231);
   }
+
+  footer nav a.active .lucide,
+  footer nav a[aria-current="page"] .lucide {
+    stroke: darkslategrey;
+  }
 }
