@@ -2,6 +2,7 @@
   background-color: aquamarine;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 16px;
+  color: black;
 }
 
 header {
@@ -13,23 +14,31 @@ header {
 
 main {
   text-align: center;
+  padding-bottom: 60px;
 }
 
 header p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 24px;
   font-weight: bold;
+}
+
+footer {
+  height: 60px;
 }
 
 nav {
   background-color: rgb(17, 114, 114);
   position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
   width: 100%;
-  height: 30px;
+  height: 50px;
   margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -39,10 +48,17 @@ nav {
   color: blanchedalmond;
 }
 
-.lucide:hover {
-  color: orangered;
+footer nav a.active .lucide,
+footer nav a[aria-current="page"] .lucide {
+  stroke: #7a177d;
+  fill: none;
 }
 
-a:hover {
+
+.lucide:hover { /*für die Navi und die Bookmarks*/
+  color: rgb(79, 239, 141);
+} 
+
+a:hover { /*für die Tags*/
   color: orangered;
 }

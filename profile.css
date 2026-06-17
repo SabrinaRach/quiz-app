@@ -1,0 +1,59 @@
+/* Styling von .question-card übernommen */
+
+.question-card-profile {
+  position: relative; /* damit sich das bookmark an der question-card orientiert */
+  background-color: rgb(144, 200, 249);
+  border: 20px solid;
+  border-image: linear-gradient(135deg, #f5f5f5, #a9a9a9, #ffffff, #7d7d7d) 1; /*erzeugt mit mehreren Farben einen Farbverlauf und somit einen scheinenden Chromeffekt. Hebelt aber border-radius und somit abgerundete Ecken aus */
+  max-width: 400px;
+  /* border-radius: 8px; wird durch border-image ausgehebelt */
+  padding: 10px 10px 10px 10px;
+  margin: 1rem auto;
+  gap: 16px;
+}
+
+.profile-header{
+    display:flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 1rem;
+}
+
+.question-card-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* 50% macht das Bild rund */
+}
+
+.profile-card-profile h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.profile-card-profile p {
+    margin: 0;
+    width: 100%;
+    font-size: 2rem; /* so groß wie .question-text in den question-cards */
+}
+
+
+/* buttons */
+
+button {
+    background-color: rgb(144, 200, 249);
+  border-image: linear-gradient(135deg, #f5f5f5, #a9a9a9, #ffffff, #7d7d7d) 1; /*erzeugt mit mehreren Farben einen Farbverlauf und somit einen scheinenden Chromeffekt. Hebelt aber border-radius und somit abgerundete Ecken aus */
+  /* border-radius: 8px; wird durch border-image ausgehebelt */
+padding: 2px 5px 2px 5px;
+}
+
+button svg {
+    stroke: #7a177d; /* Farbe der svg Elemente */
+}
+
+/* Profile Settings */
+
+.profile-settings {
+    margin-top: 50px;
+}
+
+
