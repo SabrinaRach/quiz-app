@@ -35,10 +35,11 @@
 }
 
 .show-answer {
-  padding: 8px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  background-color: antiquewhite;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .tag {
@@ -57,3 +58,5 @@
   flex-wrap: wrap;
   align-items: flex-start;
 }
+
+
