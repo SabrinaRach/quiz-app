@@ -46,3 +46,11 @@ padding: 2px 5px 2px 5px;
 button svg {
     stroke: #7a177d; /* Farbe der svg Elemente */
 }
+
+/* Profile Settings */
+
+.profile-settings {
+    margin-top: 50px;
+}
+
+
