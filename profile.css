@@ -1,4 +1,4 @@
-/* Styling von .qestion-card übernommen */
+/* Styling von .question-card übernommen */
 
 .question-card-profile {
   position: relative; /* damit sich das bookmark an der question-card orientiert */
@@ -32,4 +32,14 @@
     margin: 0;
     width: 100%;
     font-size: 2rem; /* so groß wie .question-text in den question-cards */
+}
+
+
+/* buttons */
+
+button {
+    background-color: rgb(144, 200, 249);
+border: 2px solid rgb(234, 235, 236);
+padding: 2px 5px 2px 5px;
+
 }
