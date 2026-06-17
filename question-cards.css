@@ -44,9 +44,11 @@
 .tag {
   font-size: 0.8rem;
   text-decoration: none;
-  background-color: coral;
+  background-color: rgb(248, 117, 117);
   color: black;
   align-self: flex-start;
+  padding: 2px 2px 2px 2px;
+  border-radius: 8px;
 }
 
 .tags {
