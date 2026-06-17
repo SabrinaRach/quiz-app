@@ -41,5 +41,8 @@ button {
     background-color: rgb(144, 200, 249);
 border: 2px solid rgb(234, 235, 236);
 padding: 2px 5px 2px 5px;
+}
 
+button svg {
+    stroke: #7a177d; /* Farbe der svg Elemente */
 }
