@@ -4,24 +4,21 @@
     color: rgb(252, 245, 231);
   }
 
-  header {
+  header,
+  nav,
+  .question-card,
+  .question-card-profile {
     background-color: black;
     color: rgb(252, 245, 231);
   }
 
-  nav {
-    background-color: black;
-  }
-
-  .question-card {
-    background-color: black;
-    border-color: rgb(25, 25, 25);
-  }
-
+ 
   .bookmark {
     background-color: rgb(252, 245, 231);
     border: 1px solid black;
   }
+
+
 
   .tag {
     background-color: rgb(252, 245, 231);
@@ -31,4 +28,14 @@
   footer nav a[aria-current="page"] .lucide {
     stroke: #111c1f;
   }
+}
+
+.created-questions,
+.bookmarks-profile,
+span {
+  background-color: #333;
+}
+
+button svg {
+    stroke: rgb(252, 245, 231);; /* Farbe der svg Elemente */
 }
