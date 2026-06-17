@@ -3,13 +3,15 @@
 .question-card-profile {
   position: relative; /* damit sich das bookmark an der question-card orientiert */
   background-color: rgb(144, 200, 249);
-  border: 20px solid rgb(234, 235, 236);
+  border: 20px solid;
+  border-image: linear-gradient(135deg, #f5f5f5, #a9a9a9, #ffffff, #7d7d7d) 1; /*erzeugt mit mehreren Farben einen Farbverlauf und somit einen scheinenden Chromeffekt. Hebelt aber border-radius und somit abgerundete Ecken aus */
   max-width: 400px;
-  border-radius: 8px;
+  /* border-radius: 8px; wird durch border-image ausgehebelt */
   padding: 10px 10px 10px 10px;
   margin: 1rem auto;
   gap: 16px;
 }
+
 .profile-header{
     display:flex;
     align-items: center;
