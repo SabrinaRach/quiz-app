@@ -1,0 +1,26 @@
+/* Styling von .qestion-card übernommen */
+
+.question-card-profile {
+  position: relative; /* damit sich das bookmark an der question-card orientiert */
+  background-color: rgb(144, 200, 249);
+  border: 20px solid rgb(234, 235, 236);
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question-card-profile img {
+    border-radius: 50%; /* 50% macht das Bild rund */
+}
+
+.question-card-profile h3 {
+    font-size: 1.5rem;
+}
+
+.question-card-profile p {
+    font-size: 2rem; /* so groß wie .question-text in den question-cards */
+}
