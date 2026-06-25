@@ -28,7 +28,7 @@
   footer nav a[aria-current="page"] .lucide {
     stroke: #111c1f;
   }
-}
+
 
 .created-questions,
 .bookmarks-profile,
@@ -38,4 +38,5 @@ span {
 
 button svg {
     stroke: rgb(252, 245, 231);; /* Farbe der svg Elemente */
+}
 }

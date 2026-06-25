@@ -18,7 +18,7 @@ main {
 }
 
 header p {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
@@ -54,11 +54,13 @@ footer nav a[aria-current="page"] .lucide {
   fill: none;
 }
 
+.lucide:hover {
+  /*für die Navi und die Bookmarks*/
+  color: rgb(79, 239, 141); /* für navi */
+  stroke: rgb(79, 239, 141); /* stroke für bookmarks*/
+}
 
-.lucide:hover { /*für die Navi und die Bookmarks*/
+a:hover {
+  /*für die Tags*/
   color: rgb(79, 239, 141);
-} 
-
-a:hover { /*für die Tags*/
-  color: orangered;
 }
