@@ -1,21 +1,21 @@
 @media screen and (prefers-color-scheme: dark) {
   :root {
     background-color: #333;
-    color: rgb(252, 245, 231);
+    color: rgb(252, 231, 236);
   }
 
   header,
   nav,
   .question-card,
   .question-card-profile {
-    background-color: black;
+    background-color: rgb(12, 12, 12);
     color: rgb(252, 245, 231);
   }
 
  
   .bookmark {
     background-color: rgb(252, 245, 231);
-    border: 1px solid black;
+    border: 1px solid rgb(12, 12, 12);
   }
 
 
@@ -36,7 +36,16 @@ span {
   background-color: #333;
 }
 
-button svg {
-    stroke: rgb(252, 245, 231);; /* Farbe der svg Elemente */
+/*Farbe der svg Elemente im Footer */
+button {
+  color: #240425;
+}
+svg {
+  stroke: currentColor; /*nimmt die aktuelle CSS-Farbe (color) des Elements */
+}
+
+/* Button aktiviert, Farbe leicht dunkler als in Lightmode */
+.switch input:checked + .slider {
+  background-color: #240425;
 }
 }
