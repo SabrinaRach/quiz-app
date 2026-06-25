@@ -47,7 +47,7 @@ button {
 }
 
 button svg {
-  stroke: #7a177d; /* Farbe der svg Elemente */
+  color: #7a177d; /* Farbe der svg Elemente */
 }
 
 /* Profile Settings */
