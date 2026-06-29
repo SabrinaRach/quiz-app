@@ -17,17 +17,19 @@
     <h1>Add your own questions</h1>
   </section>
   
-  <form>
+  <form data-js="yourQuestionForm">
 <label for="yourQuestion">Your Question</label>
-<textarea id="yourQuestion" maxlength="150" required></textarea>
-<p><span id="questionCount">0</span>/150 characters</p>
+<textarea id="yourQuestion" name="yourQuestion" maxlength="150" required></textarea>
+<p><span id="questionCount" data-js="questionCount">0</span>/150 characters</p>
 
 <label for="yourAnswer">Your Answer</label>
-<textarea id="yourAnswer" maxlength="150" required></textarea>
-<p><span id="questionCount">0</span>/150 characters</p>
+<textarea id="yourAnswer" name="yourAnswer" maxlength="150" required></textarea>
+<p><span id="answerCount" data-js="answerCount">0</span>/150 characters</p>
 
 <label for="tag">Tag</label>
-<input type="text" id="tag" required>
+<input type="text" id="tag" name="tag" required>
+
+<!-- id wird für JS, Label, CSS genutzt; name für FormData, submit -->
 
 
 <button type="submit">Submit</button>
