@@ -1,0 +1,29 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  width: 100%;
+  max-width: 400px;
+
+  margin: 0 auto; /* zentriert das Formular */
+}
+
+form label {
+  text-align: center;
+}
+
+form button {
+  align-self: center;
+}
+
+textarea {
+  height: 100px;
+}
+
+form p {
+  align-self: flex-end;
+  margin-top: 2px;
+  font-size: 12px;
+  color: red;
+}
