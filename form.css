@@ -17,10 +17,12 @@ form button {
   align-self: center;
 }
 
+/*Eingabefeld*/
 textarea {
   height: 100px;
 }
 
+/*für den question count*/
 form p {
   align-self: flex-end;
   margin-top: 2px;
