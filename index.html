@@ -5,6 +5,9 @@
   <link rel="stylesheet" href="./styles.css" />
   <title>Car Quiz App</title>
 </head>
+<body>
+  
+
 <header>
   <p>Car Quiz</p>
 </header>
@@ -16,14 +19,14 @@
 
   <section aria-label="question-card" class="question-cards">
     <div class="question-card">
-      <button class="bookmark" aria-label="bookmark">
+      <button class="bookmark" aria-label="bookmark" data-js="bookmark-question1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
+          fill="rgb(248, 117, 117)"
+          stroke="antiquewhite"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -152,7 +155,7 @@
       </p>
       <button class="show-answer">show answer</button>
       <p class="answer" hidden>The Bomb</p>
-      <a href="#" class="tag">Mazda</a>
+      <a href="#" class="tag">Triumph</a>
     </div>
   </section>
 </main>
@@ -195,6 +198,21 @@
         />
       </svg>
     </a>
+    <a href="./add.html" aria-label="Add Questions">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+      width="24" 
+      height="24" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      stroke-width="2" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+      class="lucide lucide-circle-plus-icon lucide-circle-plus">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M8 12h8"/><path d="M12 8v8"/>
+    </svg>
+    </a>
     <a href="./profile.html" aria-label="Profile">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -215,3 +233,7 @@
     </a>
   </nav>
 </footer>
+<script src="./bookmark-answer-toggle.js"></script>
+<script src="./darkmode.js"></script>
+</body>
+</html>
