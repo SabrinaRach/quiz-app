@@ -8,7 +8,8 @@ const yourQuestionForm = document.querySelector('[data-js="yourQuestionForm"]');
 /*title (h2) jeder question card soll mitzählen und bei jeder neuen question +1 addieren - also "question 7", "question 8" usw. */
 /* Das funktioniert nach aktuellem Stand noch nicht. Bisher können nur in der form bei neuen questions ab 1 hochgezählt werden*/
 
-let nextNumber = document.querySelectorAll('[data-js="titleh2"]').length; /* titlehw ist aus dem index.html*/
+let nextNumber = document.querySelectorAll('[data-js="titleh2"]').length; /* titleh2 ist aus dem index.html, querySelectorAll sucht nach allen Elementen, deren Attribut data-js den Wert titleh2 hat*/
+console.log(nextNumber) /* zeigt 0, da das Vorgehen so nicht funktioniert*/
 
 /*Question, answer, tag submitted*/
 yourQuestionForm.addEventListener("submit", (event) => {
