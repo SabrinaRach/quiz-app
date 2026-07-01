@@ -1,10 +1,30 @@
 /* Styling von .question-card übernommen */
 
 :root {
+  --global-background-color: aquamarine;
+  --global-font-color: black;
+  --header-background-color: rgb(252, 245, 231);
   --profile-background: rgb(144, 200, 249);
-  --profile-border: linear-gradient(135deg, #f5f5f5, #a9a9a9, #ffffff, #7d7d7d)
-    1; /*erzeugt mit mehreren Farben einen Farbverlauf und somit einen scheinenden Chromeffekt. Hebelt aber border-radius und somit abgerundete Ecken aus */
+  --profile-border: linear-gradient(
+    135deg,
+    #f5f5f5,
+    #a9a9a9,
+    #ffffff,
+    #7d7d7d
+  ); /*erzeugt mit mehreren Farben einen Farbverlauf und somit einen scheinenden Chromeffekt. Hebelt aber border-radius und somit abgerundete Ecken aus */
   --profile-text: #000;
+  --background-color-toggle-switch: #7a177d;
+  --color-svg-footer: #7a177d;
+  --nav-background-color: rgb(17, 114, 114);
+  --slider-background: #ccc;
+  --slider-knob: white;
+}
+
+/*standardmäßig setzt der Browser ein margin rund um die Seite von 8px - dh im Darkmode würde außen ein Rand in aquamarine von 8px bleiben*/
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .question-card-profile {
@@ -52,6 +72,7 @@
 
 button {
   background-color: var(--profile-background);
+  color: var(--global-font-color);
   border: 4px solid;
   border-image: var(--profile-border) 1; /*erzeugt mit mehreren Farben einen Farbverlauf und somit einen scheinenden Chromeffekt. Hebelt aber border-radius und somit abgerundete Ecken aus */
   /* border-radius: 8px; wird durch border-image ausgehebelt */
@@ -59,7 +80,7 @@ button {
 }
 
 button svg {
-  color: #7a177d; /* Farbe der svg Elemente */
+  color: var(--color-svg-footer); /* Farbe der svg Elemente */
 }
 
 /* Profile Settings */
@@ -87,7 +108,7 @@ button svg {
 .slider {
   width: 44px;
   height: 24px;
-  background-color: #ccc;
+  background-color: var(--slider-background);
   border-radius: 999px;
   position: relative;
   transition: 0.3s;
@@ -101,14 +122,14 @@ button svg {
   width: 18px;
   left: 3px;
   top: 3px;
-  background-color: white;
+  background-color: var(--slider-knob);
   border-radius: 50%;
   transition: 0.3s;
 }
 
 /* aktiviert */
 .switch input:checked + .slider {
-  background-color: #7a177d;
+  background-color: var(--background-color-toggle-switch);
 }
 
 .switch input:checked + .slider::before {
@@ -116,9 +137,43 @@ button svg {
 }
 
 /*Darkmode für profile */
+/* Vorgehen:
+ 1. Variable definieren (:root).
+ 2. Variable im Darkmode überschreiben (body.profile.dark).
+ 3. Diese Variable auch tatsächlich in den CSS-Regeln verwenden (background-color: var(...)).*/
 
 body.profile.dark {
+  --global-background-color: rgb(9, 61, 61);
+  --global-font-color: #f5f5f5;
+  --header-background-color: #333;
   --profile-background: #333;
   --profile-border: linear-gradient(135deg, #333, #555, #222, #444);
   --profile-text: #f5f5f5;
+  --background-color-toggle-switch: #240425;
+  --color-svg-footer: #240425;
+  --nav-background-color: rgb(5, 34, 34);
+  --slider-background: #555;
+  --slider-knob: #ddd;
+}
+
+html,
+body {
+  background-color: var(--global-background-color);
+  color: var(--global-font-color);
+}
+
+header {
+  background-color: var(--header-background-color);
+}
+
+footer nav {
+  background-color: var(--nav-background-color);
+}
+
+.slider {
+  background-color: var(--slider-background);
+}
+
+.slider::before {
+  background-color: var(--slider-knob);
 }
