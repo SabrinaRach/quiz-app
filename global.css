@@ -2,11 +2,13 @@
   background-color: aquamarine;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 16px;
-  color: black;
+  --global-font-color: black;
+  --nav-background-color: rgb(17, 114, 114);
+  --header-background-color: rgb(252, 245, 231);
 }
 
 header {
-  background-color: rgb(252, 245, 231);
+  background-color: var(--header-background-color);
   text-align: center;
   width: 100%;
   padding: 1px;
@@ -28,7 +30,7 @@ footer {
 }
 
 nav {
-  background-color: rgb(17, 114, 114);
+  background-color: var(--nav-background-color);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -56,7 +58,7 @@ footer nav a[aria-current="page"] .lucide {
 
 .lucide:hover {
   /*für die Navi und die Bookmarks*/
-  color: rgb(79, 239, 141); 
+  color: rgb(79, 239, 141);
 }
 
 a:hover {
